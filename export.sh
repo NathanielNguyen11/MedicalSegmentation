@@ -1,0 +1,13 @@
+python export_model.py\
+	--checkpoint_path="/media/ubuntu/Quang/best_result/logs1/model.ckpt-141339"\
+	--export_path="/media/ubuntu/Quang/best_result/logs1/frozen_inference_graph.pb"\
+	--model_variant="xception_65"\
+	--atrous_rates=6\
+	--atrous_rates=12\
+	--atrous_rates=18\
+	--output_stride=16\
+	--decoder_output_stride=4\
+	--num_classes=2\
+	--crop_size=400\
+	--crop_size=400\
+	--inference_scales=1.0

@@ -1,0 +1,17 @@
+python train.py \
+    --logtostderr \
+    --training_number_of_steps=100000000 \
+    --train_split="train" \
+    --model_variant="xception_65" \
+    --atrous_rates=6 \
+    --atrous_rates=12 \
+    --atrous_rates=18 \
+    --output_stride=16 \
+    --decoder_output_stride=4 \
+    --train_crop_size=400 \
+    --train_crop_size=400 \
+    --train_batch_size=4 \
+    --dataset="pascal_voc_seg" \
+    --tf_initial_checkpoint="/home/ubuntu/Desktop/models-master/research/deeplab/initial_fol/deeplabv3_pascal_trainval/model.ckpt" \
+    --train_logdir="/media/ubuntu/Quang/models-master/research/deeplab/colorectal/logs1" \
+    --dataset_dir="/media/ubuntu/Quang/ass_challenge/ass/ass1/tfrecord"
